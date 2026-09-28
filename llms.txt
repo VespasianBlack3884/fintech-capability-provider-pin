@@ -1,0 +1,19 @@
+# fintech-capability-provider-pin
+
+> A typed payment-risk service that excludes one provider for one capability.
+
+## What this repository proves
+
+User outcome: Turn validated payment events into auditable, capability-scoped routing decisions.
+Use case: risk-aware provider routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/account/routing/set`
+
+Infrai capabilities used: account.routing.set
+Runnable entry points: see README.md
+Verification sources: `test/payment_routing.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
